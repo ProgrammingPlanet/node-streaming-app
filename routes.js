@@ -4,6 +4,7 @@ const controller = require('./controller')
 
 router
     .get('/', controller.root)
-    .get('/a', controller.test)
+    .get('/playback/video', controller.videoplayback)
+    .get('/playback/audio', controller.audioplayback)
 
 module.exports = router
